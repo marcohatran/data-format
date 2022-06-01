@@ -1,0 +1,337 @@
+{
+    "data": {
+      "dataset": {
+        "urn": "urn:li:dataset:(urn:li:dataPlatform:hdfs,file:/Users/hathanhtran/my-spark-job/data/input,PROD)",
+        "name": "file:/Users/hathanhtran/my-spark-job/data/input",
+        "type": "DATASET",
+        "origin": "PROD",
+        "uri": null,
+        "platform": {
+          "urn": "urn:li:dataPlatform:hdfs",
+          "type": "DATA_PLATFORM",
+          "name": "hdfs",
+          "properties": {
+            "type": "FILE_SYSTEM",
+            "displayName": "HDFS",
+            "datasetNameDelimiter": "/",
+            "logoUrl": "/assets/platforms/hadooplogo.png",
+            "__typename": "DataPlatformProperties"
+          },
+          "displayName": null,
+          "info": null,
+          "__typename": "DataPlatform"
+        },
+        "dataPlatformInstance": null,
+        "platformNativeType": null,
+        "properties": null,
+        "editableProperties": null,
+        "ownership": null,
+        "institutionalMemory": null,
+        "schemaMetadata": null,
+        "previousSchemaMetadata": null,
+        "editableSchemaMetadata": null,
+        "globalTags": null,
+        "glossaryTerms": null,
+        "subTypes": null,
+        "domain": null,
+        "container": null,
+        "deprecation": null,
+        "__typename": "Dataset",
+        "parentContainers": {
+          "count": 0,
+          "containers": [],
+          "__typename": "ParentContainersResult"
+        },
+        "usageStats": {
+          "buckets": [],
+          "aggregations": {
+            "uniqueUserCount": 0,
+            "totalSqlQueries": null,
+            "users": [],
+            "fields": [],
+            "__typename": "UsageQueryResultAggregations"
+          },
+          "__typename": "UsageQueryResult"
+        },
+        "datasetProfiles": [],
+        "health": null,
+        "assertions": {
+          "total": 0,
+          "__typename": "EntityAssertionsResult"
+        },
+        "operations": [],
+        "upstream": {
+          "start": 0,
+          "count": 100,
+          "total": 0,
+          "relationships": [],
+          "__typename": "EntityLineageResult"
+        },
+        "downstream": {
+          "start": 0,
+          "count": 100,
+          "total": 1,
+          "relationships": [
+            {
+              "type": "Consumes",
+              "entity": {
+                "urn": "urn:li:dataJob:(urn:li:dataFlow:(spark,MySparkJob,local[*]),QueryExecId_4)",
+                "type": "DATA_JOB",
+                "dataFlow": {
+                  "urn": "urn:li:dataFlow:(spark,MySparkJob,local[*])",
+                  "type": "DATA_FLOW",
+                  "orchestrator": "spark",
+                  "flowId": "MySparkJob",
+                  "cluster": "local[*]",
+                  "properties": {
+                    "name": "MySparkJob",
+                    "description": null,
+                    "project": null,
+                    "externalUrl": null,
+                    "customProperties": [
+                      {
+                        "key": "startedAt",
+                        "value": "2022-05-30T15:45:13.220Z",
+                        "__typename": "StringMapEntry"
+                      },
+                      {
+                        "key": "completedAt",
+                        "value": "2022-05-30T15:45:21.858Z",
+                        "__typename": "StringMapEntry"
+                      },
+                      {
+                        "key": "sparkUser",
+                        "value": "hathanhtran",
+                        "__typename": "StringMapEntry"
+                      },
+                      {
+                        "key": "appName",
+                        "value": "MySparkJob",
+                        "__typename": "StringMapEntry"
+                      },
+                      {
+                        "key": "appId",
+                        "value": "local-1653925514280",
+                        "__typename": "StringMapEntry"
+                      }
+                    ],
+                    "__typename": "DataFlowProperties"
+                  },
+                  "editableProperties": null,
+                  "ownership": null,
+                  "platform": {
+                    "urn": "urn:li:dataPlatform:spark",
+                    "type": "DATA_PLATFORM",
+                    "name": "spark",
+                    "properties": {
+                      "type": "OTHERS",
+                      "displayName": "Spark",
+                      "datasetNameDelimiter": ".",
+                      "logoUrl": "/assets/platforms/sparklogo.png",
+                      "__typename": "DataPlatformProperties"
+                    },
+                    "displayName": null,
+                    "info": null,
+                    "__typename": "DataPlatform"
+                  },
+                  "domain": null,
+                  "deprecation": null,
+                  "__typename": "DataFlow"
+                },
+                "jobId": "QueryExecId_4",
+                "ownership": null,
+                "inputOutput": {
+                  "inputDatasets": [
+                    {
+                      "urn": "urn:li:dataset:(urn:li:dataPlatform:hdfs,file:/Users/hathanhtran/my-spark-job/data/input,PROD)",
+                      "name": "file:/Users/hathanhtran/my-spark-job/data/input",
+                      "type": "DATASET",
+                      "origin": "PROD",
+                      "uri": null,
+                      "platform": {
+                        "urn": "urn:li:dataPlatform:hdfs",
+                        "type": "DATA_PLATFORM",
+                        "name": "hdfs",
+                        "properties": {
+                          "type": "FILE_SYSTEM",
+                          "displayName": "HDFS",
+                          "datasetNameDelimiter": "/",
+                          "logoUrl": "/assets/platforms/hadooplogo.png",
+                          "__typename": "DataPlatformProperties"
+                        },
+                        "displayName": null,
+                        "info": null,
+                        "__typename": "DataPlatform"
+                      },
+                      "dataPlatformInstance": null,
+                      "platformNativeType": null,
+                      "properties": null,
+                      "editableProperties": null,
+                      "ownership": null,
+                      "institutionalMemory": null,
+                      "schemaMetadata": null,
+                      "previousSchemaMetadata": null,
+                      "editableSchemaMetadata": null,
+                      "globalTags": null,
+                      "glossaryTerms": null,
+                      "subTypes": null,
+                      "domain": null,
+                      "container": null,
+                      "deprecation": null,
+                      "__typename": "Dataset"
+                    }
+                  ],
+                  "outputDatasets": [
+                    {
+                      "urn": "urn:li:dataset:(urn:li:dataPlatform:hdfs,file:/Users/hathanhtran/my-spark-job/data/output/nicknames,PROD)",
+                      "name": "file:/Users/hathanhtran/my-spark-job/data/output/nicknames",
+                      "type": "DATASET",
+                      "origin": "PROD",
+                      "uri": null,
+                      "platform": {
+                        "urn": "urn:li:dataPlatform:hdfs",
+                        "type": "DATA_PLATFORM",
+                        "name": "hdfs",
+                        "properties": {
+                          "type": "FILE_SYSTEM",
+                          "displayName": "HDFS",
+                          "datasetNameDelimiter": "/",
+                          "logoUrl": "/assets/platforms/hadooplogo.png",
+                          "__typename": "DataPlatformProperties"
+                        },
+                        "displayName": null,
+                        "info": null,
+                        "__typename": "DataPlatform"
+                      },
+                      "dataPlatformInstance": null,
+                      "platformNativeType": null,
+                      "properties": null,
+                      "editableProperties": null,
+                      "ownership": null,
+                      "institutionalMemory": null,
+                      "schemaMetadata": null,
+                      "previousSchemaMetadata": null,
+                      "editableSchemaMetadata": null,
+                      "globalTags": null,
+                      "glossaryTerms": null,
+                      "subTypes": null,
+                      "domain": null,
+                      "container": null,
+                      "deprecation": null,
+                      "__typename": "Dataset"
+                    }
+                  ],
+                  "inputDatajobs": [],
+                  "__typename": "DataJobInputOutput"
+                },
+                "properties": {
+                  "name": "csv at NativeMethodAccessorImpl.java:0",
+                  "description": null,
+                  "externalUrl": null,
+                  "customProperties": [
+                    {
+                      "key": "SQLQueryId",
+                      "value": "4",
+                      "__typename": "StringMapEntry"
+                    },
+                    {
+                      "key": "completedAt",
+                      "value": "2022-05-30T15:45:21.460Z",
+                      "__typename": "StringMapEntry"
+                    },
+                    {
+                      "key": "appName",
+                      "value": "MySparkJob",
+                      "__typename": "StringMapEntry"
+                    },
+                    {
+                      "key": "appId",
+                      "value": "local-1653925514280",
+                      "__typename": "StringMapEntry"
+                    },
+                    {
+                      "key": "startedAt",
+                      "value": "2022-05-30T15:45:20.792Z",
+                      "__typename": "StringMapEntry"
+                    },
+                    {
+                      "key": "description",
+                      "value": "csv at NativeMethodAccessorImpl.java:0",
+                      "__typename": "StringMapEntry"
+                    },
+                    {
+                      "key": "queryPlan",
+                      "value": "InsertIntoHadoopFsRelationCommand file:/Users/hathanhtran/my-spark-job/data/output/nicknames, false, CSV, [path=data/output/nicknames], Overwrite, [id, nickname]\n+- Project [id#16, concat(favorite_color#17,  , state#40) AS nickname#44]\n   +- Join Inner, (favorite_city#18 = city#39)\n      :- Filter isnotnull(favorite_city#18)\n      :  +- Relation[id#16,favorite_color#17,favorite_city#18] csv\n      +- Project [city#39, state#40]\n         +- Filter isnotnull(city#39)\n            +- Relation[id#38,city#39,state#40] csv\n",
+                      "__typename": "StringMapEntry"
+                    }
+                  ],
+                  "__typename": "DataJobProperties"
+                },
+                "editableProperties": null,
+                "globalTags": null,
+                "institutionalMemory": null,
+                "glossaryTerms": null,
+                "domain": null,
+                "deprecation": null,
+                "dataPlatformInstance": null,
+                "__typename": "DataJob",
+                "status": null,
+                "upstream": {
+                  "start": 0,
+                  "count": 100,
+                  "total": 1,
+                  "relationships": [
+                    {
+                      "type": "Consumes",
+                      "entity": {
+                        "urn": "urn:li:dataset:(urn:li:dataPlatform:hdfs,file:/Users/hathanhtran/my-spark-job/data/input,PROD)",
+                        "type": "DATASET",
+                        "__typename": "Dataset"
+                      },
+                      "__typename": "LineageRelationship"
+                    }
+                  ],
+                  "__typename": "EntityLineageResult"
+                },
+                "downstream": {
+                  "start": 0,
+                  "count": 100,
+                  "total": 1,
+                  "relationships": [
+                    {
+                      "type": "Produces",
+                      "entity": {
+                        "urn": "urn:li:dataset:(urn:li:dataPlatform:hdfs,file:/Users/hathanhtran/my-spark-job/data/output/nicknames,PROD)",
+                        "type": "DATASET",
+                        "__typename": "Dataset"
+                      },
+                      "__typename": "LineageRelationship"
+                    }
+                  ],
+                  "__typename": "EntityLineageResult"
+                }
+              },
+              "__typename": "LineageRelationship"
+            }
+          ],
+          "__typename": "EntityLineageResult"
+        },
+        "viewProperties": null,
+        "autoRenderAspects": [],
+        "status": null,
+        "readRuns": {
+          "count": 20,
+          "start": 0,
+          "total": 0,
+          "__typename": "DataProcessInstanceResult"
+        },
+        "writeRuns": {
+          "count": 20,
+          "start": 0,
+          "total": 0,
+          "__typename": "DataProcessInstanceResult"
+        },
+        "testResults": null
+      }
+    }
+  }
